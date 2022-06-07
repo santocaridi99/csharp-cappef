@@ -6,8 +6,70 @@ namespace csharp_cappef
 {
     internal class Program
     {
+        //public static System.Collections.Generic.IEnumerable<int> Power(int number)
+        //{
+        //    int result = 1;
+        //    while (true)
+        //    {
+        //        result = result * number; //Potrei fare: GetNextFromDB();
+        //        yield return result;
+        //        //La prossima volta che chiamate la funzione, ripartite esattamente da questo punto
+
+        //    }
+        //}
+        //public static System.Collections.Generic.IEnumerable<long> Genera(long n)
+        //{
+        //    long result = 1;
+        //    while (n > 0)
+        //    {
+                
+        //        yield return result++;
+               
+
+        //    }
+        //}
+
+        //public static Func<int> accumul(int number)
+        //{  //Closure
+        //    int result = 1;
+
+        //    return () =>
+        //    {
+        //        result = result * number;
+        //        return result;
+        //    };
+        //}
         static void Main(string[] args)
         {
+            //contare tutti i numeri che contengono la cifra 2
+            //compresi tra 1 e 10000000000
+
+            //soluzione 1
+            //long conta = 0;
+            //for(long i=0; i < 1000000000; ++i)
+            //{
+            //    if (i.ToString().Contains('2'))
+            //        conta++;
+
+            //}
+            //Console.WriteLine(conta);
+
+            ////soluzione 2
+            //long conta1 = 0;
+            //long letti1 = 0;
+            //foreach(int n in Genera(10000000)){
+            //    if (n.ToString().Contains('2'))
+            //    {
+            //        conta1++;
+            //    }
+            //}
+            //Console.WriteLine(conta1);
+
+            ////stampare somma dei pari usando genera
+            //Console.WriteLine(Genera(1000000).Where(n => n%2 ==0).Sum());
+
+
+
             Console.WriteLine("Ciao");
             using (SchoolContext db = new SchoolContext())
             {
